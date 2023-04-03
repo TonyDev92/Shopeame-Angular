@@ -1,0 +1,136 @@
+@media (min-width: 320px) {
+  .hdr {
+    height: auto;
+  }
+  .hdr .title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hdr .title__logo {
+    width: 30px;
+    height: 30px;
+    background-color: #425FB4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hdr .title__logo--i {
+    width: 85%;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .hdr .title__letter {
+    font-family: "Merienda", cursive;
+    margin-left: 1rem;
+    font-weight: lighter;
+    font-size: xx-large;
+  }
+  .hdr__nv {
+    width: 100%;
+    height: 15vw;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #FFC970;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  .hdr__nv--a {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1px;
+  }
+  .hdr__nv--b {
+    text-decoration: none;
+    font-family: "Contrail One", cursive;
+    color: #425FB4;
+    display: flex;
+    flex-direction: column;
+  }
+  .hdr__nv--b img {
+    align-self: center;
+    max-width: 40%;
+  }
+  .hdr__nv--b:focus {
+    height: 100%;
+    width: auto;
+    background-color: #EEEEEE;
+    border-radius: 6px;
+    margin: 2px;
+  }
+}
+@media all and (min-width: 800px) and (max-width: 1600px) {
+  .hdr {
+    height: auto;
+  }
+  .hdr .title {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hdr .title__logo {
+    width: 50px;
+    height: 50px;
+    background-color: #425FB4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hdr .title__logo--i {
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .hdr .title__letter {
+    font-family: "Merienda", cursive;
+    margin-left: 1rem;
+    font-weight: lighter;
+    font-size: 3rem;
+  }
+  .hdr__nv {
+    width: 100%;
+    height: 5vw;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #FFC970;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+  }
+  .hdr__nv--a {
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hdr__nv--b {
+    text-decoration: none;
+    font-family: "Contrail One", cursive;
+    color: #425FB4;
+    display: flex;
+    flex-direction: column;
+  }
+  .hdr__nv--b img {
+    align-self: center;
+    width: auto;
+  }
+  .hdr__nv--b:focus {
+    height: 100%;
+    width: auto;
+    background-color: #EEEEEE;
+    border-radius: 6px;
+  }
+}/*# sourceMappingURL=header.component.css.map */

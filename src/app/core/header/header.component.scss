@@ -1,0 +1,156 @@
+@media(min-width:320px){
+    .hdr{
+        height: auto;
+        .title{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__logo{
+                width: 30px;
+                height: 30px;
+                background-color: #425FB4;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &--i{
+                width: 85%;
+                color: white;
+                font-family:sans-serif;
+                text-align: center;
+            }
+            }
+            
+            &__letter{
+                font-family: 'Merienda', cursive;
+                margin-left: 1rem;
+                font-weight: lighter;
+                font-size: xx-large;
+            }
+        }
+        
+        
+        
+        &__nv{
+            width: 100%;
+            height: 15vw;
+            margin-top: 1rem;
+            text-decoration: none;
+            background-color: #FFC970;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+
+            &--a{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 1px;
+                
+            }
+            
+            
+            &--b{
+                    text-decoration: none;
+                    font-family: 'Contrail One', cursive;
+                    color: #425FB4;
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        align-self: center;
+                        max-width: 40%;
+                    }
+            }
+            &--b:focus{
+                height: 100%;
+                width: auto;
+                background-color: #EEEEEE;
+                border-radius: 6px;
+                margin: 2px;
+            }
+        }
+        
+    }
+    
+}
+
+@media all and (min-width: 800px) and (max-width: 1600px){
+    .hdr{
+        height: auto;
+        .title{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__logo{
+                width: 50px;
+                height: 50px;
+                background-color: #425FB4;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &--i{
+                width: 100%;
+                color: white;
+                font-family:sans-serif;
+                text-align: center;
+            }
+            }
+            
+            &__letter{
+                font-family: 'Merienda', cursive;
+                margin-left: 1rem;
+                font-weight: lighter;
+                font-size: 3rem;
+            }
+        }
+        
+        
+        
+        &__nv{
+            width: 100%;
+            height: 5vw;
+            margin-top: 1rem;
+            text-decoration: none;
+            background-color: #FFC970;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+
+            &--a{
+                width: 7%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            
+            &--b{
+                    text-decoration: none;
+                    font-family: 'Contrail One', cursive;
+                    color: #425FB4;
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        align-self: center;
+                        width: auto;
+                    }
+            }
+            &--b:focus{
+                height: 100%;
+                width: auto;
+                background-color: #EEEEEE;
+                border-radius: 6px;
+                
+            }
+        }
+        
+    }
+}

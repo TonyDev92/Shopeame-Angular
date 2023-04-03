@@ -1,0 +1,31 @@
+<main class="content">
+    <div class="galery">
+        <div class="galery__div">
+        <h1 class="galery__tit">Listado de Productos({{products.length}})</h1>
+            <input id="search" type="text" class="formControl" placeholder="buscar" [(ngModel)]="filterProducts" name="filterProducts" >
+        </div>
+
+        <div class="card" *ngFor="let product of (products | filter:filterProducts)" >
+
+            <h5 class="card__title" >{{product.name}}</h5>
+            <img class="card__title--i" src="{{product.image}}" alt="{{product.name}}">
+            <p class="card__title--p">{{product.description}}</p>
+            <p class="card__title--b">{{product.price}} $</p>
+            <form>
+                <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5" checked *ngIf="product.stars"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="4" ><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3" checked *ngIf="product.stars"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="2" ><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="1" checked *ngIf="product.stars"><!--
+                --><label for="radio5">★</label>
+                </p>
+            </form>
+            <button id="to" routerLink="/gestion/{{product.id}}" >editar</button>
+        </div>
+    </div>
+</main>

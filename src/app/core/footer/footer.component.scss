@@ -1,0 +1,95 @@
+@media(min-width:320px){
+    .foot{
+        margin-top: 1rem;
+        background-color: #333333;
+        height: 24vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        &__title{
+            color:#FFFFFF;
+            font-family: 'Sanchez', serif;
+            text-align: center;
+            font-size: 10px;
+        }
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vw;
+        align-content: center;
+        
+    }
+    .to{
+        text-decoration: none;
+        color: white;
+        font-family: 'Sanchez', serif;
+        margin: 5px;
+        font-size: 10px;
+    }
+    #t{
+        border-right: 1px solid white;
+    }
+    #f{
+        border-right: 1px solid white;
+    }
+    #i{
+        border-right: 1px solid white;
+    }
+    #fp{
+        color: #FFFFFF;
+        font-family: 'Sanchez', serif;
+        font-size: 10px;
+    }
+}
+
+@media all and (min-width:800px) and (max-width:1600px){
+    .foot{
+        margin-top: 1rem;
+        background-color: #333333;
+        height: 10vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        &__title{
+            color:#FFFFFF;
+            font-family: 'Sanchez', serif;
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1vw;
+        align-content: center;
+        
+    }
+    .to{
+        text-decoration: none;
+        color: white;
+        font-family: 'Sanchez', serif;
+        margin: 5px;
+        font-size: 15px;
+    }
+    #t{
+        border-right: 1px solid white;
+    }
+    #f{
+        border-right: 1px solid white;
+    }
+    #i{
+        border-right: 1px solid white;
+    }
+    #fp{
+        color: #FFFFFF;
+        font-family: 'Sanchez', serif;
+        font-size: 15px;
+    }
+}

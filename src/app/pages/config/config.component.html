@@ -1,0 +1,48 @@
+<div class="father">
+    <div class="fr">
+
+        <form class="fr__in" (submit)="saveNew(description, img, title, price , opiniones)">
+            <div class="ht">
+                <h2 class="tit">Creación/Edición de productos</h2>
+            </div>
+            <label class="fr__in--a" for="name">Nombre del Producto:</label>
+            <input class="fr__in--a" type="text" name="name" [(ngModel)]="title"
+                placeholder="Por ej: Tiesto para planta">
+            <label class="fr__in--a" for="price">Precio:</label>
+            <input class="fr__in--a" type="text" name="price" [(ngModel)]="price" placeholder="Por ej: 9.50">
+            <label class="fr__in--a" for="description">Descripción:</label>
+            <input class="fr__in--a" type="text" name="description" [(ngModel)]="description"
+                placeholder="Por ej: Lo más vendido este mes">
+            <label class="fr__in--a" for="ruta">Ruta de la imagen:</label>
+            <input class="fr__in--a" type="text" name="ruta" [(ngModel)]="img"
+                placeholder="Por ej: Http://imagen.com/img.jpg">
+            <label class="fr__in--a" for="Opiniones">Opiniones</label>
+            <input class="fr__in--a" type="text" name="Opiniones" [(ngModel)]="opiniones" placeholder="Por ej: 4.28">
+            <div id="sav">
+                <button id="btn" type="submit">Guardar</button>
+            </div>
+        </form>
+        <div class="card">
+            <h5 *ngIf="title">Preview del producto</h5>
+            <h5 class="card__title">{{title}}</h5>
+            <img class="card__title--i" src="{{img}}" alt="{{title}}" *ngIf="img">
+            <p class="card__title--p">{{description}}</p>
+            <p class="card__title--b" *ngIf="price">{{price}} {{text}}</p>
+            <form *ngIf="title">
+                <p class="clasificacion">
+                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+        --><label for="radio1">★</label><!--
+        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+        --><label for="radio2">★</label><!--
+        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+        --><label for="radio3">★</label><!--
+        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+        --><label for="radio4">★</label><!--
+        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+        --><label for="radio5">★</label>
+                </p>
+            </form>
+            <button id="to" routerLink="/gestion" *ngIf="img">editar</button>
+        </div>
+    </div>
+</div>
