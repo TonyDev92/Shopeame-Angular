@@ -9,11 +9,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductsService {
-  private url = ' http://localhost:3000/products';
+  private url = 'https://shopeame-backend-alpha.vercel.app/products';
 
   constructor(private http: HttpClient ) { }
   getProducts(){
-    return this.http.get(' http://localhost:3000/products')
+    return this.http.get('https://shopeame-backend-alpha.vercel.app/products')
   }
   addProducts(product:productInterface) : Observable<productInterface> {
     return this.http.post<productInterface>(this.url, product);

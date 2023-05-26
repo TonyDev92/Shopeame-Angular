@@ -41,7 +41,7 @@ export class ConfigComponent implements OnInit{
   
   onUpdateProduct(obj:productInterface): void{
     
-    // this.ProductsService.updateProducts(obj).subscribe(prod => {
+    // this.ProductsService.updateProducts(obj.id).subscribe(prod => {
     //   const indexToUpdate = prod ? 
     // })
   }
